@@ -11,6 +11,8 @@ import CombineCoreBluetooth
 
 struct ContentView: View {
     @Binding var viewModel: ViewModel
+    var onPlayPause: (Bool) -> Void
+    var onScrub: (Double) -> Void
     
     private var progressValue: Double {
         let total = viewModel.mediaLength.asSeconds
@@ -35,7 +37,7 @@ struct ContentView: View {
                 Text(viewModel.currentProgress.formattedAsHMS)
                 Spacer()
                 Button {
-                    viewModel.playPause()
+                    onPlayPause(viewModel.isPlaying)
                 } label: {
                     Image(systemName: viewModel.isPlaying ? "pause.fill" : "play.fill")
                 }

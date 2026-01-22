@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct ControlPlaybackApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra {
+            ContentView2()
+        } label: {
+            Image(systemName: "appletvremote.gen1")
         }
+        .menuBarExtraStyle(.window)
     }
 }

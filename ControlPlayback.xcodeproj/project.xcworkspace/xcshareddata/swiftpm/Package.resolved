@@ -1,0 +1,24 @@
+{
+  "originHash" : "6eae3c219f01aa6eadb923bf266ee191fb4eabdc83a0d3f4796f27675cfd12fc",
+  "pins" : [
+    {
+      "identity" : "combinecorebluetooth",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:aviwad/CombineCoreBluetooth.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "08a4ae61a656a7a0417a2fb35977081e55cd0eda"
+      }
+    },
+    {
+      "identity" : "mediaremote-adapter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MxIris-LyricsX-Project/mediaremote-adapter",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7e144a5ede5b382a3c4a0ec7e5bf3b32696e072b"
+      }
+    }
+  ],
+  "version" : 3
+}
